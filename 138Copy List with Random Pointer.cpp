@@ -13,7 +13,7 @@ public:
             return nullptr;
         RandomListNode *cur; 
         RandomListNode *node; 
-        // ¹¹ÔìĞÂ½Úµã
+        // æ„é€ æ–°èŠ‚ç‚¹
         for (cur = head; cur; ) {
             node = new RandomListNode(cur->label);
             node->next = cur->next;
@@ -25,7 +25,7 @@ public:
                 cur->next->random = cur->random->next;
             cur = cur->next->next;
         }
-        // ·Ö²ğÁ½¸öµ¥Á´±í
+        // åˆ†æ‹†ä¸¤ä¸ªå•é“¾è¡¨
         RandomListNode dummy(-1);
         RandomListNode *new_cur = &dummy;
         cur = head;
